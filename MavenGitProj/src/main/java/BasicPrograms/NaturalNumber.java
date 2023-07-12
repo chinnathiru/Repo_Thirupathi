@@ -11,9 +11,13 @@ public class NaturalNumber {
 			
 		}
 
-		System.out.println("numbers ="+sum);
+		System.out.println("numbers  ="+sum);
 
-		System.out.println("sum is ="+sum);
+
+		System.out.println("sum are ="+sum);
+
+		System.out.println("sum of natural numbers is ="+sum);
+
 		
 
 	}
