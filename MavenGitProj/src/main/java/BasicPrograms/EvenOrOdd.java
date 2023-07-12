@@ -15,7 +15,7 @@ public class EvenOrOdd {
 		}
 		else
 		{
-			System.out.println("given number is odd number");
+			System.out.println("given number is odd 1");
 		}
 		
 
