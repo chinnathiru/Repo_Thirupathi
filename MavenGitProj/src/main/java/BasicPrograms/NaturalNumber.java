@@ -16,7 +16,12 @@ public class NaturalNumber {
 
 		System.out.println("sum are ="+sum);
 
+
 		System.out.println("sum natural numbers is ="+sum);
+
+		System.out.println("sum of  numbers is ="+sum);
+		
+
 
 		
 
