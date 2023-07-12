@@ -10,7 +10,11 @@ public class NaturalNumber {
 			sum=sum+i;
 			
 		}
+
 		System.out.println("numbers ="+sum);
+
+		System.out.println("sum is ="+sum);
+		
 
 	}
 
