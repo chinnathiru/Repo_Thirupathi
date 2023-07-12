@@ -13,6 +13,10 @@ public class EvenOrOdd {
 			System.out.println("given number is even number");
 			
 		}
+		else
+		{
+			System.out.println("given number is odd number");
+		}
 		
 
 	}
