@@ -9,6 +9,7 @@ public class Sub {
 
 	    int c= a-b;
 	    System.out.println("substraction of c="+c);
+	    System.out.println("hi");
 	}
 
 }
