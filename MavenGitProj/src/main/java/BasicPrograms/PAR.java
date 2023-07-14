@@ -17,7 +17,8 @@ public class PAR {
 			if (sum == i)
 			{
 				int temp = i, temp3 = i, sum1 = 0, sum2 = 0, prev = 1;
-				while (temp > 0) {
+				while (temp > 0) 
+				{
 					temp = temp / 10;
 					sum1++;
 				}
@@ -32,22 +33,19 @@ public class PAR {
 					prev = 1;
 					temp3 = temp3 / 10;
 				}
-
-
 				if (sum2 == i) 
 				{
 					int temp4 = i, rev = 0;
-					while (temp4 > 0) {
+					while (temp4 > 0) 
+					{
 						int rem1 = temp4 % 10;
 						rev = rev * 10 + rem1;
 						temp4 = temp4 / 10;
-
 					}
 					if (rev == i)
 					{
 						System.out.println(i+"is palindrome,Armstrong,perfect");
 					}
-
 				}
 
 			}
