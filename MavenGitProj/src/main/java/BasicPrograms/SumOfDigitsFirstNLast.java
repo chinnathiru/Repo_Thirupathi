@@ -17,6 +17,11 @@ public class SumOfDigitsFirstNLast {
 		}
 		System.out.println("sum="+(sum+rem));
 
+		System.out.println("welcome to ZTOH......");
+
+		System.out.println("hello ..............");
+
+
 	}
 
 }
