@@ -10,6 +10,14 @@ public class TableFormat {
 		{
 			System.out.println(n+"*"+i+"="+(n*i));
 
+			
+            System.out.println(n+"-"+i+"="+(n-i));
+            System.out.println("-----------------------");
+	    System.out.println(n+"+"+i+"="+(n+i));
+            System.out.println("..................");
+			
+           
+			
 
 
 		}
