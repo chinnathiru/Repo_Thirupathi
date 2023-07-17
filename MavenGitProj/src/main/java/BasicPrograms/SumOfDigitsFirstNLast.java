@@ -12,6 +12,7 @@ public class SumOfDigitsFirstNLast {
 		while(temp>0) 
 		{
 			sum=temp;
+			System.out.println(sum);
 			temp=temp/10;
 			
 		}
@@ -20,8 +21,6 @@ public class SumOfDigitsFirstNLast {
 		System.out.println("welcome to ZTOH......");
 
 		System.out.println("hello ..............");
-
-
 	}
 
 }
