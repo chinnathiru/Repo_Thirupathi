@@ -50,14 +50,11 @@ public class Anagram {
 		}
 		else
 		{
-
 			System.out.println("given string is not equal ");
 			System.out.println(".................enter correctly......");
 
 			System.out.println("given string is not equal ");	
 			System.out.println("two Strings are not equal , Entdr");
-
-
 
 		}
 
