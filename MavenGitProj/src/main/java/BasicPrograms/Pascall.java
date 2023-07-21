@@ -34,7 +34,7 @@ public class Pascall {
 				System.out.print(resu+" ");
 			}
 							
-			
+			System.out.println();
 			System.out.println();
 		}
 
