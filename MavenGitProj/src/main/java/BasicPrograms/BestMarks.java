@@ -43,15 +43,18 @@ public class BestMarks
 		if(this.IsIMPExamMarksIsBest(impmarks, mainmarks))
 		{
 			this.displayMarks("final marks", impmarks);
+			System.out.println("......................");
 		}
 		else
 		{
 			this.displayMarks("fianal marks", mainmarks);
+			System.out.println(".......................");
 		}
 		}
 		else
 		{
 		this.displayMarks("final marks", mainmarks);	
+		System.out.println("....................");
 		}
 			
 		}
