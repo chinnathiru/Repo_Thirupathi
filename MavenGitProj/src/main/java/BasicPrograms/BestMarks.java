@@ -36,8 +36,8 @@ public class BestMarks
 	{
 		scan =new Scanner(System.in);
 		int mainmarks=this.ScanStudentMarks("main exam Marks");
-		String answer=this.didUAttemptedImprovmentExamMArks();
-		if(this.isIMprovementAttempted(answer))
+		String answer1=this.didUAttemptedImprovmentExamMArks();
+		if(this.isIMprovementAttempted(answer1))
 		{
 		int impmarks=this.ScanStudentMarks("Improvment exam marks:");
 		if(this.IsIMPExamMarksIsBest(impmarks, mainmarks))
