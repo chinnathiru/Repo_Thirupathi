@@ -30,7 +30,7 @@ public class Method1
 	{
 		int c3=a3/b3;
 		return c3;
-
+	}
 	public int m2(int a2,int b2)
 	{
 		int c2=a2*b2;
