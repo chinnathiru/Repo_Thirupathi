@@ -25,10 +25,17 @@ public class Method1
 		
 		
 	}
+
 	public int m3(int a3, int b3)
 	{
 		int c3=a3/b3;
 		return c3;
+
+	public int m2(int a2,int b2)
+	{
+		int c2=a2*b2;
+		return c2;
+
 	}
 
 	public static void main(String[] args) 
@@ -39,8 +46,13 @@ public class Method1
 	
 		int c=n.m(15, 30);
 		System.out.println("the substraction value="+c);
+
        int r1= n.m3(15, 5);
-       System.out.println("the division value="+r1);
+
+		int r=n.m2(25, 5);
+		System.out.println("the mutliplication of value="+r);
+		
+
 	}
 
 }
