@@ -16,11 +16,16 @@ public class PrintValue {
 				System.out.println("i="+i+" j="+j); 
 				System.out.println("jgfgrgirghgdrfjfgh");
 				System.out.println("fyhte8rgh");
+
+				System.out.println("................... ");
+				System.out.println();
+
 				System.out.println("dlkjhnsdfilgh ffrfftgggerstrtstfg8 ");
+
  
 			}
 			
-			
+		
 		}
 
 	}
