@@ -24,6 +24,17 @@ public class Practice
 	    By submitl=By.xpath("//button[@class='btn']");
 	    WebElement submit=driver.findElement(submitl);
 	    submit.click();
+	    Thread.sleep(2000);
+	    
+	    By practl=By.xpath("//a[text()='Practice']");
+	    WebElement practce=driver.findElement(practl);
+	    practce.click();
+	    
+	    Thread.sleep(2000);
+	    By testExecutionL=By.xpath("//a[text()='Test Exceptions']");
+	    WebElement testE=driver.findElement(testExecutionL);
+	    testE.click();
+	    
 	    
 	    
 		
