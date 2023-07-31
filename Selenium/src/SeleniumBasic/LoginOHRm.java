@@ -64,7 +64,7 @@ public class LoginOHRm {
 		//By empidl=By.xpath("//label[text()='Employee Id']//ancestor::div[@class='oxd-input-group oxd-input-field-bottom-space']/child::div[2]/input");
 		WebElement empid=driver.findElement(empidl);
 		empid.click();
-//		empid.click();
+     	//empid.click();
 		Thread.sleep(3000);	
 		//var c=empid.isSelected();
 		empid.clear();
