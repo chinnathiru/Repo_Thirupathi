@@ -28,12 +28,14 @@ public class W3school {
 		By loginL1=By.xpath("//span[text()='Log in']");
 		WebElement logi=driver.findElement(loginL1);
 		logi.click();
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 //		driver.switchTo().frame("classic-menu");
 //		Thread.sleep(2000);
 //		By profileL=By.xpath("//a[@id='domains-link']");
 //		WebElement profile=driver.findElement(profileL);
 //		profile.click();
+		
+		
 		
 		
 		
