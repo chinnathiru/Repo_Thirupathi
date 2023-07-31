@@ -61,19 +61,38 @@ public class LoginOHRm {
 		Thread.sleep(2000);
 		
 		By empidl=By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]");
+		//By empidl=By.xpath("//label[text()='Employee Id']//ancestor::div[@class='oxd-input-group oxd-input-field-bottom-space']/child::div[2]/input");
 		WebElement empid=driver.findElement(empidl);
-		
 		empid.click();
-		Thread.sleep(2000);
+//		empid.click();
+		Thread.sleep(3000);	
+		//var c=empid.isSelected();
 		empid.clear();
-//		Thread.sleep(2000);
-//		empid.sendKeys("0023");
-		Thread.sleep(2000);
-		
-		
+		Thread.sleep(3000);
+		empid.sendKeys("0023");
+	   Thread.sleep(2000);
 		By saveBtnl=By.xpath("//button[@type='submit']");
 		WebElement saveBtn=driver.findElement(saveBtnl);
 		saveBtn.click();
+		
+		Thread.sleep(4000);
+		
+		By otherIdl=By.xpath("(//input[@class='oxd-input oxd-input--active'])[4]");
+		WebElement otherId=driver.findElement(otherIdl);
+		otherId.click();
+		Thread.sleep(2000);
+		otherId.sendKeys("236000");
+		Thread.sleep(2000);
+		//By DriveLicenceNL=By.xpath("//label[text()='Driver License Number']");
+		By DriveLicenceNL=By.xpath("(//input[@class='oxd-input oxd-input--active'])[5]");
+		WebElement DriveLicenceN=driver.findElement(DriveLicenceNL);
+		DriveLicenceN.sendKeys("DL021256");
+		Thread.sleep(2000);
+		
+		
+		
+
+		
 		
 		
 		/*
@@ -85,8 +104,9 @@ public class LoginOHRm {
 		  (//input[@class='oxd-input oxd-input--active'])[2]
 		  //button[@type='submit']
 		   //button[text()=' Cancel ']
-		   * 
-		 
+		   
+		    
+		    //div[@class='orangehrm-horizontal-padding orangehrm-vertical-padding']//button[text()=' Save ']
 		 */
 		
 		
