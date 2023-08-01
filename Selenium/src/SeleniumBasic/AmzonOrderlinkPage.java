@@ -32,6 +32,9 @@ public class AmzonOrderlinkPage {
 		WebElement clickonotherissue=driver.findElement(clickonotherissuel);
 		clickonotherissue.click();
 		Thread.sleep(2000);
+		By yoursL=By.xpath("(//p[@class='a-size-small a-color-base'])[3]");
+		WebElement yours=driver.findElement(yoursL);
+		yours.click();
 //		String expctedmsg="Account & Login Issues";
 //		By accountloginmsgl=By.xpath("//h1[text()='Account & Login Issues']");
 //		String accountloginmsg=driver.findElement(accountloginmsgl).getText();
