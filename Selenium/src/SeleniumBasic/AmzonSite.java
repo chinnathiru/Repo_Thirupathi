@@ -29,12 +29,12 @@ public class AmzonSite {
 		sumsangMobil.click();
 		//sumsangMobil.click();
 		
-		Thread.sleep(8000);
-		By addcartL=By.xpath("//input[@title='Add to Shopping Cart']");
-		Thread.sleep(8000);
-		WebElement addcart=driver.findElement(addcartL);
-		Thread.sleep(4000);
-		addcart.click();
+//		Thread.sleep(8000);
+//		By addcartL=By.xpath("//input[@title='Add to Shopping Cart']");
+//		Thread.sleep(8000);
+//		WebElement addcart=driver.findElement(addcartL);
+//		Thread.sleep(4000);
+//		addcart.click();
 		
 	
 		
