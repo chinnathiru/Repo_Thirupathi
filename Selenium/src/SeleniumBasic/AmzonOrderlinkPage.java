@@ -23,7 +23,28 @@ public class AmzonOrderlinkPage {
 		By continuel=By.xpath("//input[@id='continue']");
 		WebElement continuee=driver.findElement(continuel);
 		continuee.click();
-	
+		Thread.sleep(2000);
+		By clickNeedHelpl=By.xpath("//span[@class='a-expander-prompt']");
+		WebElement clickneedhepl=driver.findElement(clickNeedHelpl);
+		clickneedhepl.click();
+		Thread.sleep(2000);
+		By clickonotherissuel=By.xpath("//a[@id='ap-other-signin-issues-link']");
+		WebElement clickonotherissue=driver.findElement(clickonotherissuel);
+		clickonotherissue.click();
+		Thread.sleep(2000);
+//		String expctedmsg="Account & Login Issues";
+//		By accountloginmsgl=By.xpath("//h1[text()='Account & Login Issues']");
+//		String accountloginmsg=driver.findElement(accountloginmsgl).getText();
+//		System.out.println(accountloginmsg);
+//		if(expctedmsg.equals(accountloginmsg))
+//		{
+//			System.out.println("pass");
+//		}
+//		else
+//		{
+//			System.out.println("fail");
+//		}
+//	
 //		String expectedmsg="There was a problem";
 //		By errormsgl=By.xpath("//h4[text()='There was a problem']");
 //		String Actuslerrormsg=driver.findElement(errormsgl).getText();
