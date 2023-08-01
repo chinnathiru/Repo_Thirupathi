@@ -24,6 +24,7 @@ public class FlipCartpage {
 		WebElement signup=driver.findElement(signUpl);
 		signup.click();
 		Thread.sleep(2000);
+		
 	}
 
 }
