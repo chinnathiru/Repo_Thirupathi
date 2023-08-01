@@ -21,20 +21,20 @@ public class AmzonSite {
 		
 		WebElement searchbtn=driver.findElement(searbtnl);
 		searchbtn.click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		By sumsangMobilL=By.xpath("(//span[text()='Samsung Galaxy S23 Ultra 5G (Green, 12GB, 256GB Storage)'])[1]");
-		Thread.sleep(8000);
+		Thread.sleep(6000);
 		WebElement sumsangMobil=driver.findElement(sumsangMobilL);
 		Thread.sleep(4000);
 		sumsangMobil.click();
 		//sumsangMobil.click();
 		
-//		Thread.sleep(8000);
-//		By addcartL=By.xpath("//input[@title='Add to Shopping Cart']");
-//		Thread.sleep(8000);
-//		WebElement addcart=driver.findElement(addcartL);
-//		Thread.sleep(4000);
-//		addcart.click();
+		Thread.sleep(8000);
+		By addcartL=By.xpath("//input[@title='Add to Shopping Cart']");
+		Thread.sleep(8000);
+		WebElement addcart=driver.findElement(addcartL);
+		Thread.sleep(4000);
+		addcart.click();
 		
 	
 		
