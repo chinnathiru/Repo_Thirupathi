@@ -35,12 +35,14 @@ public class OrangeHrm {
 		PIM.click();
 		Thread.sleep(2000);
 		
-		By selectcheckboxl=By.xpath("(//input[@type='checkbox'])[2]");
+		By selectcheckboxl=By.xpath("(//button[@class='oxd-icon-button oxd-table-cell-action-space'])[1]");
+		Thread.sleep(4000);
 		WebElement checkbox=driver.findElement(selectcheckboxl);
 		Thread.sleep(4000);
 		checkbox.click();
 		Thread.sleep(2000);
-		By deletebtnl=By.xpath("//i[@class='oxd-icon bi-trash-fill oxd-button-icon']");
+		By deletebtnl=By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']");
+		Thread.sleep(2000);
 		WebElement deletebtn=driver.findElement(deletebtnl);
 		deletebtn.click();
 		
