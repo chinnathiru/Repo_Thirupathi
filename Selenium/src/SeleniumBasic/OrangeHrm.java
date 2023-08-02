@@ -36,20 +36,28 @@ public class OrangeHrm {
 		PIM.click();
 		Thread.sleep(2000);
 		
-		By nextbtnl=By.xpath("//button[@class='oxd-pagination-page-item oxd-pagination-page-item--previous-next']");
-		Thread.sleep(2000);
+//		By nextbtnl=By.xpath("//button[@class='oxd-pagination-page-item oxd-pagination-page-item--previous-next']");
+//		Thread.sleep(4000);
+//		
+//		WebElement nextbn=driver.findElement(nextbtnl);
+//		nextbn.click();
+//		Thread.sleep(2000);
+//		
+//		//By selectcheckboxl=By.xpath("(//button[@class='oxd-icon-button oxd-table-cell-action-space'])[1]");
+//		By selectcheckboxl=By.xpath("(//button[@class='oxd-icon-button oxd-table-cell-action-space'])[85]");
+//		
+//		Thread.sleep(5000);
+//		WebElement checkbox=driver.findElement(selectcheckboxl);
+//		Thread.sleep(4000);
+//		checkbox.click();
 		
-		WebElement nextbn=driver.findElement(nextbtnl);
-		nextbn.click();
-		Thread.sleep(2000);
-		
-		//By selectcheckboxl=By.xpath("(//button[@class='oxd-icon-button oxd-table-cell-action-space'])[1]");
-		By selectcheckboxl=By.xpath("(//button[@class='oxd-icon-button oxd-table-cell-action-space'])[85]");
+		By selectcheckboxl=By.xpath("(//button[@class='oxd-icon-button oxd-table-cell-action-space'])[45]");
 		
 		Thread.sleep(5000);
 		WebElement checkbox=driver.findElement(selectcheckboxl);
 		Thread.sleep(4000);
 		checkbox.click();
+		
 		Thread.sleep(2000);
 		By deletebtnl=By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']");
 		Thread.sleep(2000);
@@ -64,7 +72,7 @@ public class OrangeHrm {
 		WebElement empreporter=driver.findElement(Empreporterl);
 		empreporter.sendKeys("Employee Job Details");
 		Thread.sleep(2000);
-		empreporter.sendKeys(Keys.ENTER);
+//		empreporter.sendKeys(Keys.ENTER);
 		
 		
 		
