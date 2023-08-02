@@ -35,8 +35,15 @@ public class OrangeHrm {
 		PIM.click();
 		Thread.sleep(2000);
 		
-		By selectcheckboxl=By.xpath("(//button[@class='oxd-icon-button oxd-table-cell-action-space'])[1]");
-		Thread.sleep(4000);
+		By nextbtnl=By.xpath("//button[@class='oxd-pagination-page-item oxd-pagination-page-item--previous-next']");
+		WebElement nextbn=driver.findElement(nextbtnl);
+		nextbn.click();
+		Thread.sleep(2000);
+		
+		//By selectcheckboxl=By.xpath("(//button[@class='oxd-icon-button oxd-table-cell-action-space'])[1]");
+		By selectcheckboxl=By.xpath("(//button[@class='oxd-icon-button oxd-table-cell-action-space'])[85]");
+		
+		Thread.sleep(5000);
 		WebElement checkbox=driver.findElement(selectcheckboxl);
 		Thread.sleep(4000);
 		checkbox.click();
