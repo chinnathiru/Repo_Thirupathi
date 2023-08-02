@@ -1,6 +1,7 @@
 package SeleniumBasic;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,6 +37,8 @@ public class OrangeHrm {
 		Thread.sleep(2000);
 		
 		By nextbtnl=By.xpath("//button[@class='oxd-pagination-page-item oxd-pagination-page-item--previous-next']");
+		Thread.sleep(2000);
+		
 		WebElement nextbn=driver.findElement(nextbtnl);
 		nextbn.click();
 		Thread.sleep(2000);
@@ -52,6 +55,18 @@ public class OrangeHrm {
 		Thread.sleep(2000);
 		WebElement deletebtn=driver.findElement(deletebtnl);
 		deletebtn.click();
+		Thread.sleep(3000);
+		By reportbntl=By.xpath("//a[text()='Reports']");
+		WebElement report=driver.findElement(reportbntl);
+		report.click();
+		Thread.sleep(2000);
+		By Empreporterl=By.xpath("//input[@placeholder='Type for hints...']");
+		WebElement empreporter=driver.findElement(Empreporterl);
+		empreporter.sendKeys("Employee Job Details");
+		Thread.sleep(2000);
+		empreporter.sendKeys(Keys.ENTER);
+		
+		
 		
 		
 	}
