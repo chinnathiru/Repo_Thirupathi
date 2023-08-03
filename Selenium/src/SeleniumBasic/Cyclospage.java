@@ -56,9 +56,33 @@ public class Cyclospage {
 		WebElement nextbtn=driver.findElement(nextbtnl);
 		Thread.sleep(2000);
 		nextbtn.click();
+	    Thread.sleep(3000);
+		By passwordl=By.xpath("//div[@class='label-value-container']//div//input[@id='id_7']");
+		Thread.sleep(3000);
+		WebElement password=driver.findElement(passwordl);
+		Thread.sleep(3000);
+		password.click();
+		password.sendKeys("thiru@1234");
+		Thread.sleep(3000);
 		
-		
-		
+		By cpasswordl=By.xpath("//div[@class='label-value-container']//div//input[@id='id_8']");
+		Thread.sleep(3000);
+		WebElement cpassword=driver.findElement(cpasswordl);
+		Thread.sleep(3000);
+		cpassword.click();
+		cpassword.sendKeys("thiru@1234");
+		Thread.sleep(3000);
+//		By checkboxl=By.xpath("//input[@type='checkbox']");
+//		Thread.sleep(3000);
+//		WebElement checkbox=driver.findElement(checkboxl);
+//		Thread.sleep(3000);
+//		checkbox.click();
+//		Thread.sleep(3000);
+//		By submitl=By.xpath("//span[text()='Submit']");
+//		Thread.sleep(3000);
+//		WebElement submit=driver.findElement(submitl);
+//		Thread.sleep(3000);
+//		submit.click();
 
 	}
 
