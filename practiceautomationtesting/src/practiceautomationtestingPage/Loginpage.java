@@ -12,17 +12,18 @@ public class Loginpage extends BaseClass
 		static By usernameL=By.xpath("//input[@name='username']");
 		static By passwordL=By.xpath("//input[@id='password']");
 		static By submitL=By.xpath("//button[@class='btn']");
+		
 	//	negative scenarios password invalid
 		static By usernamel=By.xpath("//input[@name='username']");
 		static By passwordl=By.xpath("//input[@id='password']");
 		static By submil=By.xpath("//button[@class='btn']");
 		
-		//
+		// positive scenario 
 	static	By usernameTxtl=By.xpath("//input[@name='username']");
-	static     By passwordtxtl=By.xpath("//input[@id='password']");
-	static    By submitl=By.xpath("//button[@class='btn']");
-	static    By practl=By.xpath("//a[text()='Practice']");
-	static    By testExecutionL=By.xpath("//a[text()='Test Exceptions']");
+	static  By passwordtxtl=By.xpath("//input[@id='password']");
+	static  By submitl=By.xpath("//button[@class='btn']");
+	static  By practl=By.xpath("//a[text()='Practice']");
+	static  By testExecutionL=By.xpath("//a[text()='Test Exceptions']");
 	
 	//webElements 
 	
@@ -34,11 +35,11 @@ public class Loginpage extends BaseClass
 		static WebElement pass=driver.findElement(passwordl);
 		static WebElement submit1=driver.findElement(submil);
 		
-//		static WebElement usrename=driver.findElement(usernamel);
-//		static WebElement pasdd=driver.findElement(passwordl);
-//		static  WebElement submitbtnL=driver.findElement(submitl);
-//		static  WebElement practce=driver.findElement(practl);
-//		static  WebElement testE=driver.findElement(testExecutionL);
+		static WebElement usrenameText=driver.findElement(usernamel);
+		static WebElement pasdd=driver.findElement(passwordl);
+		static  WebElement submitbtnL=driver.findElement(submitl);
+		//static  WebElement practce=driver.findElement(practl);
+		//static  WebElement testE=driver.findElement(testExecutionL);
 		 
 	public static void username() throws InterruptedException
 	{
@@ -74,11 +75,11 @@ public class Loginpage extends BaseClass
 	{
 	submit1.click();
 	}
-	/*
+	
 	public static void enterusernametxtbos() throws InterruptedException
 	{
-	
-	usrename.sendKeys("student");
+	Thread.sleep(2000);
+	usrenameText.sendKeys("student");
     Thread.sleep(2000);
 	}
 	public static void enterpasswordetxtbos() throws InterruptedException
@@ -93,19 +94,19 @@ public class Loginpage extends BaseClass
     Thread.sleep(2000);
    }
    
-   public static void clickonpracticeelement() throws InterruptedException
-   {
-    practce.click();
+//   public static void clickonpracticeelement() throws InterruptedException
+//   {
+//    practce.click();
+//    
+//    Thread.sleep(2000);
+//   }
+//    public static void clickontestexecution()
+//    {
+//   
+//    testE.click();
+//	
+//    }
     
-    Thread.sleep(2000);
-   }
-    public static void clickontestexecution()
-    {
-   
-    testE.click();
-	
-    }
-    */
 	
 
 }
