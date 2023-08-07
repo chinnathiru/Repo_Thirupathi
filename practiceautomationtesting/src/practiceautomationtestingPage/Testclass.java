@@ -14,9 +14,9 @@ public class Testclass {
 		Loginpage.Usernametextbox();
 		Loginpage.passwordtextbox();
 		Loginpage.submitbtn();
-//		Loginpage.enterusernametxtbos();
-//		Loginpage.enterpasswordetxtbos();
-//		Loginpage.submitBt();
+		Loginpage.enterusernametxtbos();
+		Loginpage.enterpasswordetxtbos();
+		Loginpage.submitBt();
 //		Loginpage.clickonpracticeelement();
 //		Loginpage.clickontestexecution();
 				
