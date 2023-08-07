@@ -16,7 +16,7 @@ public class PIMpage  extends Baseclass
 	static By otherIdl=By.xpath("(//input[@class='oxd-input oxd-input--active'])[4]");
 	static By DriveLicenceNL=By.xpath("(//input[@class='oxd-input oxd-input--active'])[5]");
 	static By savebtl=By.xpath("//button[text()=' Save ']");
-	
+
 	static	WebElement PIM=driver.findElement(PIMl);
 	static	WebElement clickAdd=driver.findElement(clickAddemp);
 	static  WebElement Employeefirstn=driver.findElement(Employeefirstnl);
@@ -27,76 +27,71 @@ public class PIMpage  extends Baseclass
 	static    WebElement otherId=driver.findElement(otherIdl);
 	static    WebElement DriveLicenceN=driver.findElement(DriveLicenceNL);
 	static WebElement savebt=driver.findElement(savebtl);
-	
+
 	public static void PIMclick() throws InterruptedException
 	{
-	PIM.click();
-	Thread.sleep(4000);
-	}
-	
-	public static void clickaAddemplyButton() throws InterruptedException
-	{
-	clickAdd.click();
-	//Thread.sleep(2000);
-	}
-	
-	public static void firstname() throws InterruptedException
-	{
-		
-	Employeefirstn.sendKeys("thiru");
-	//Thread.sleep(2000);
+		PIM.click();
+		Thread.sleep(4000);
 	}
 
-	
- public static void middile() throws InterruptedException
- {
-	MiddileName.sendKeys("chinna");
-	//Thread.sleep(2000);
- }	
-	
+	public static void clickaAddemplyButton() throws InterruptedException
+	{
+		clickAdd.click();
+		//Thread.sleep(2000);
+	}
+
+	public static void firstname() throws InterruptedException
+	{
+
+		Employeefirstn.sendKeys("thiru");
+		//Thread.sleep(2000);
+	}
+
+
+	public static void middile() throws InterruptedException
+	{
+		MiddileName.sendKeys("chinna");
+		//Thread.sleep(2000);
+	}	
+
 	public static void lastname() throws InterruptedException
 	{
-		
-	LastName.sendKeys("Gopu");
-	//Thread.sleep(2000);
+
+		LastName.sendKeys("Gopu");
+		//Thread.sleep(2000);
 	}
-	
+
 	public static void employeeid() throws InterruptedException
 	{
-	empid.click();
- 	//empid.click();
-	//Thread.sleep(3000);	
-	
-	//var c=empid.isSelected();
-	empid.clear();
-	//Thread.sleep(3000);
-	empid.sendKeys("0023");
-   //Thread.sleep(2000);
+		empid.click();
+		empid.clear();
+		//Thread.sleep(3000);
+		empid.sendKeys("0023");
+
 	}
 	public static void savebutton() throws InterruptedException
 	{
-	saveBtn.click();
-	
-	//Thread.sleep(4000);
+		saveBtn.click();
+
+		//Thread.sleep(4000);
 	}
 	public static void otherId() throws InterruptedException
 	{
-	otherId.click();
-	//Thread.sleep(2000);
-	otherId.sendKeys("236000");
-	//Thread.sleep(2000);
+		otherId.click();
+
+		otherId.sendKeys("236000");
+		//Thread.sleep(2000);
 	}
-	//By DriveLicenceNL=By.xpath("//label[text()='Driver License Number']");
-	
+
 	public static void DriverLicencebox() throws InterruptedException
 	{
-	DriveLicenceN.sendKeys("DL021256");
-	Thread.sleep(2000);
+		DriveLicenceN.sendKeys("DL021256");
+		Thread.sleep(2000);
 	}	
 	public static void savebtn()
 	{
 		savebt.click();
 	}
-	
-	
+
+
 }
