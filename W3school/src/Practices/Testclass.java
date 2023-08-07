@@ -9,6 +9,7 @@ public class Testclass {
 		Loginpage.entrepassword();
 		Loginpage.clickloginbutton();
 		Loginpage.closeBroswer();
+		ProfilePage.clickprofile();
 
 	}
 
