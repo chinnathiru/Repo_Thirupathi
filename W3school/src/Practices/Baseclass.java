@@ -14,8 +14,9 @@ public class Baseclass
 		Thread.sleep(2000);
 		
 	}
-	public static void closeBroswer()
+	public static void closeBroswer() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		driver.close();
 	}
 

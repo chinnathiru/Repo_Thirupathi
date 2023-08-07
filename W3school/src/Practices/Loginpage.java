@@ -27,9 +27,10 @@ public static void entrepassword() throws InterruptedException
 	passwordl.sendKeys("Thiruramya@143");
 	Thread.sleep(2000);
 }
-public static void clickloginbutton()
+public static void clickloginbutton() throws InterruptedException
 {
 	loginl.click();
+	Thread.sleep(3000);
 }
 	
 	
