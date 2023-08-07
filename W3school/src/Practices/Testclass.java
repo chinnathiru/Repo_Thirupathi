@@ -8,6 +8,7 @@ public class Testclass {
 		Loginpage.enterusername();
 		Loginpage.entrepassword();
 		Loginpage.clickloginbutton();
+		Loginpage.closeBroswer();
 
 	}
 
