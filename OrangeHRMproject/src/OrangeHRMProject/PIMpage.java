@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 public class PIMpage  extends Baseclass
 {
 
-	static By PIMl=By.xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name' and text()='PIM']");
+	//static By PIMl=By.xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name' and text()='PIM']");
+	static By PIMl=By.xpath("//span[text()='PIM']");
+	
 	static By clickAddemp=By.xpath("//a[text()='Add Employee']");
 	static	By Employeefirstnl=By.xpath("//input[@name='firstName']");
 	static  By MiddileNamel=By.xpath("//input[@name='middleName']");
@@ -17,7 +19,7 @@ public class PIMpage  extends Baseclass
 	static By DriveLicenceNL=By.xpath("(//input[@class='oxd-input oxd-input--active'])[5]");
 	static By savebtl=By.xpath("//button[text()=' Save ']");
 
-	static	WebElement PIM=driver.findElement(PIMl);
+	static	WebElement PIM =  driver.findElement(PIMl);
 	static	WebElement clickAdd=driver.findElement(clickAddemp);
 	static  WebElement Employeefirstn=driver.findElement(Employeefirstnl);
 	static  WebElement MiddileName=driver.findElement(MiddileNamel);
@@ -30,8 +32,10 @@ public class PIMpage  extends Baseclass
 
 	public static void PIMclick() throws InterruptedException
 	{
+		
+		//Thread.sleep(9000);
 		PIM.click();
-		Thread.sleep(4000);
+		//Thread.sleep(4000);
 	}
 
 	public static void clickaAddemplyButton() throws InterruptedException

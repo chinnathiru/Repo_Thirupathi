@@ -27,7 +27,7 @@ public class LoginPage extends Baseclass
 	{
 	
 	Login.click();
-	Thread.sleep(2000);
+	//Thread.sleep(2000);
 	}
 
 	
