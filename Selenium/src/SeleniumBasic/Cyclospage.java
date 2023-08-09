@@ -13,7 +13,7 @@ public class Cyclospage {
 		driver.manage().window().maximize();
 		Thread.sleep(4000);
 		By registerl=By.xpath("//div[text()=' Register ']");
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		WebElement register=driver.findElement(registerl);
 		register.click();
 		Thread.sleep(4000);
