@@ -8,25 +8,39 @@ public class LoginPage extends Baseclass
 	static By usernamel=By.xpath("//input[@name='username']");
 	static By passwordl=By.xpath("//input[@type='password']");
 	static By LoginL=By.xpath("//button[@type='submit']");
+	//webelement
+	public static WebElement usernametxt()
+	{
+	    WebElement usernam=driver.findElement(usernamel);
+		return usernam;
+	}
 	
-	static WebElement usernam=driver.findElement(usernamel);
-	static WebElement pass=driver.findElement(passwordl);
-	static WebElement Login=driver.findElement(LoginL);
+	public static WebElement paswordtxt()
+	{
+	 WebElement pass=driver.findElement(passwordl);
+	return pass;
+	}
 	
+	public static WebElement loginbtn()
+	{
+	 WebElement Login=driver.findElement(LoginL);
+	return Login;
+	}
+	//actions
 	public static  void enterusername()
 	{
-	usernam.sendKeys("Admin");
+		usernametxt().sendKeys("Admin");
 	}
 	
 	public static void enterpassword()
 	{
-	pass.sendKeys("admin123");
+		paswordtxt().sendKeys("admin123");
 	}
 	
 	public static void clickloginbnt() throws InterruptedException
 	{
 	
-	Login.click();
+		loginbtn().click();
 	//Thread.sleep(2000);
 	}
 
