@@ -19,82 +19,122 @@ public class PIMpage  extends Baseclass
 	static By DriveLicenceNL=By.xpath("(//input[@class='oxd-input oxd-input--active'])[5]");
 	static By savebtl=By.xpath("//button[text()=' Save ']");
 
-	static	WebElement PIM =  driver.findElement(PIMl);
-	static	WebElement clickAdd=driver.findElement(clickAddemp);
-	static  WebElement Employeefirstn=driver.findElement(Employeefirstnl);
-	static  WebElement MiddileName=driver.findElement(MiddileNamel);
-	static   WebElement LastName=driver.findElement(LastNamel);
-	static   WebElement empid=driver.findElement(empidl);
-	static   WebElement saveBtn=driver.findElement(saveBtnl);
-	static    WebElement otherId=driver.findElement(otherIdl);
-	static    WebElement DriveLicenceN=driver.findElement(DriveLicenceNL);
-	static WebElement savebt=driver.findElement(savebtl);
+public static WebElement pimpage()
+{
+	WebElement PIM =  driver.findElement(PIMl);
+	return PIM;
+}
+public static WebElement clickaddemp()
+{
+		WebElement clickAdd=driver.findElement(clickAddemp);
+		return clickAdd;
+}
+public static WebElement emplfirstname()
+{
+	  WebElement Employeefirstn=driver.findElement(Employeefirstnl);
+	return Employeefirstn;
+}
+public static WebElement middilename()
+{
+	WebElement MiddileName=driver.findElement(MiddileNamel);
+	return MiddileName;
+}
+public static WebElement lastnmae()	
+{
+	WebElement LastName=driver.findElement(LastNamel);
+	return LastName;
+}
+public static WebElement emplId()
+{
+	WebElement empid=driver.findElement(empidl);
+	return empid;
+}
+public static WebElement Savebtn()
+{
+	WebElement saveBtn=driver.findElement(saveBtnl);
+	return saveBtn;
+}
+public static WebElement otherI()
+{
+	WebElement otherId=driver.findElement(otherIdl);
+	return otherId;
+}
+public static WebElement driverlicence()
+{
+	WebElement DriveLicenceN=driver.findElement(DriveLicenceNL);
+	return DriveLicenceN;
+}
+public static WebElement savebtnme()
+{
+	WebElement savebt=driver.findElement(savebtl);
+	return savebt;
+}
 
 	public static void PIMclick() throws InterruptedException
 	{
 		
 		//Thread.sleep(9000);
-		PIM.click();
+		pimpage().click();
 		//Thread.sleep(4000);
 	}
 
 	public static void clickaAddemplyButton() throws InterruptedException
 	{
-		clickAdd.click();
+		clickaddemp().click();
 		//Thread.sleep(2000);
 	}
 
 	public static void firstname() throws InterruptedException
 	{
 
-		Employeefirstn.sendKeys("thiru");
+		emplfirstname().sendKeys("thiru");
 		//Thread.sleep(2000);
 	}
 
 
 	public static void middile() throws InterruptedException
 	{
-		MiddileName.sendKeys("chinna");
+		middilename().sendKeys("chinna");
 		//Thread.sleep(2000);
 	}	
 
 	public static void lastname() throws InterruptedException
 	{
 
-		LastName.sendKeys("Gopu");
+		lastnmae().sendKeys("Gopu");
 		//Thread.sleep(2000);
 	}
 
 	public static void employeeid() throws InterruptedException
 	{
-		empid.click();
-		empid.clear();
+		//emplId().click();
+		emplId().clear();
 		//Thread.sleep(3000);
-		empid.sendKeys("0023");
+		emplId().sendKeys("0023");
 
 	}
 	public static void savebutton() throws InterruptedException
 	{
-		saveBtn.click();
+		Savebtn().click();
 
 		//Thread.sleep(4000);
 	}
 	public static void otherId() throws InterruptedException
 	{
-		otherId.click();
+		otherI().click();
 
-		otherId.sendKeys("236000");
+		otherI().sendKeys("236000");
 		//Thread.sleep(2000);
 	}
 
 	public static void DriverLicencebox() throws InterruptedException
 	{
-		DriveLicenceN.sendKeys("DL021256");
+		driverlicence().sendKeys("DL021256");
 		Thread.sleep(2000);
 	}	
 	public static void savebtn()
 	{
-		savebt.click();
+		savebtnme().click();
 	}
 
 

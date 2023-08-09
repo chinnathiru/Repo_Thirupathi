@@ -30,7 +30,7 @@ public class Testclass {
 		//Thread.sleep(3000);
 		PIMpage.savebutton();
 		//Thread.sleep(2000);
-		PIMpage.otherId();
+		//PIMpage.otherId();
 		//Thread.sleep(2000);
 		PIMpage.DriverLicencebox();
 		//Thread.sleep(2000);
