@@ -75,7 +75,7 @@ public static WebElement savebtnme()
 		
 		//Thread.sleep(9000);
 		pimpage().click();
-		//Thread.sleep(4000);
+		
 	}
 
 	public static void clickaAddemplyButton() throws InterruptedException
