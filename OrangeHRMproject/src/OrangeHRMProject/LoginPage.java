@@ -8,6 +8,7 @@ public class LoginPage extends Baseclass
 	static By usernamel=By.xpath("//input[@name='username']");
 	static By passwordl=By.xpath("//input[@type='password']");
 	static By LoginL=By.xpath("//button[@type='submit']");
+	
 	//webelement
 	public static WebElement usernametxt()
 	{
