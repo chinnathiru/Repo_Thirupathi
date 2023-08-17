@@ -17,8 +17,8 @@ public class Testclass {
 		Loginpage.enterusernametxtbos();
 		Loginpage.enterpasswordetxtbos();
 		Loginpage.submitBt();
-//		Loginpage.clickonpracticeelement();
-//		Loginpage.clickontestexecution();
+		Loginpage.clickonpracticeelement();
+		Loginpage.clickontestexecution();
 				
 
 	}

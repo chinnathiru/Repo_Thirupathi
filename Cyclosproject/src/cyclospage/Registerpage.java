@@ -19,76 +19,113 @@ public class Registerpage extends BaseClass
 
 
 //webElements
-	static	WebElement register=driver.findElement(registerl);
-	static	WebElement name=driver.findElement(namel);
-	static	WebElement loginname=driver.findElement(loginnamel);
-	static	WebElement email=driver.findElement(emaill);
-	static	WebElement website=driver.findElement(websitel);
-	static	WebElement gender=driver.findElement(genderl);
-	static	WebElement nextbtn=driver.findElement(nextbtnl);
-	static	WebElement password=driver.findElement(passwordl);
-	static	WebElement cpassword=driver.findElement(cpasswordl);
+	public static	WebElement register()
+	{
+	WebElement regi=driver.findElement(registerl);
+	return regi;
+	}
+	public static	WebElement namel()
+	{
+		WebElement nam=driver.findElement(namel);
+		return nam;
+	}
+	public static	WebElement loginnamel()
+	{
+		WebElement logi=driver.findElement(loginnamel);
+		return logi;
+	}
+	public static	WebElement emailL()
+	{
+		WebElement ema=driver.findElement(emaill);
+		return ema;
+	}
+	public static	WebElement websiteL()
+	{
+		WebElement web=driver.findElement(websitel);
+		return web;
+	}
+	public static	WebElement genderL()
+	{
+		WebElement gne=driver.findElement(genderl);
+		return gne;
+	}
+	public static	WebElement nextbtnL()
+	{
+		WebElement next=driver.findElement(nextbtnl);
+		return next;
+	}
+	public static	WebElement passwordL()
+	{
+		WebElement pass=driver.findElement(passwordl);
+		return pass;
+	}
+	public static	WebElement cpasswordL()
+	{
+		WebElement cpass=driver.findElement(cpasswordl);
+		return cpass;
+	
+	}
 
 	//Actions
 	public static void clickOnregister() throws InterruptedException
 	{
-		register.click();
+		register().click();
 		Thread.sleep(4000);
 	}
 
 	public static void name() throws InterruptedException
 	{
-		name.click();
+		namel().click();
 		Thread.sleep(6000);
-		name.sendKeys("chinna");
+		namel().sendKeys("chinna");
 		Thread.sleep(2000);
 	}
 
 	public static void loginname() throws InterruptedException
 	{
 		Thread.sleep(2000);
-		loginname.sendKeys("thiruchinna");
+		loginnamel().sendKeys("thiruchinna");
 		Thread.sleep(2000);
 	}
 	public static void email() throws InterruptedException
 	{
 
-		email.sendKeys("chinna@gmail.com");
+		emailL().sendKeys("chinna@gmail.com");
 		Thread.sleep(2000);
 	}
 
 	public static void website() throws InterruptedException
 	{
-		website.sendKeys("www.chinna.com");
+		websiteL().sendKeys("www.chinna.com");
 		Thread.sleep(2000);
 	}
 
 	public static void gender() throws InterruptedException
 	{
-		gender.click();
+		genderL().click();
 		Thread.sleep(2000);
 	}
 	public static void nextbtn() throws InterruptedException
 	{
 
 		Thread.sleep(2000);
-		nextbtn.click();
+		nextbtnL().click();
 		Thread.sleep(3000);
 	}
 
 	public static void password() throws InterruptedException
 	{
 		Thread.sleep(3000);
-		password.click();
-		password.sendKeys("thiru@1234");
+		passwordL().click();
+		passwordL().sendKeys("thiru@1234");
 		Thread.sleep(3000);
 	}
 
 	public static void conformPassword() throws InterruptedException
 	{
 		Thread.sleep(3000);
-		cpassword.click();
-		cpassword.sendKeys("thiru@1234");
+		cpasswordL().click();
+		cpasswordL().sendKeys("thiru@1234");
 		Thread.sleep(3000);
 	}
 }
