@@ -27,85 +27,129 @@ public class Loginpage extends BaseClass
 	
 	//webElements 
 	
-		static WebElement username=driver.findElement(usernameL);
-		static WebElement password=driver.findElement(passwordL);
-		static WebElement submit=driver.findElement(submitL);
+		public static WebElement usernameL()
+		{
+			WebElement us=driver.findElement(usernameL);
+			return us;
+		}
+		public static WebElement passwordL()
+		{
+			WebElement pass=driver.findElement(passwordL);
+			return pass;
+		}
+		public static WebElement submitL()
+		{
+			WebElement sub=driver.findElement(submitL);
+			return sub;
+		}
 	
-		static WebElement usernam=driver.findElement(usernamel);
-		static WebElement pass=driver.findElement(passwordl);
-		static WebElement submit1=driver.findElement(submil);
+		public static WebElement usernamL()
+		{
+			WebElement user=driver.findElement(usernamel);
+			return user;
+		}
+		public static WebElement passL()
+		{
+			WebElement pas=driver.findElement(passwordl);
+			return pas;
+		}
+		public static WebElement submit1()
+		{
+			WebElement subm=driver.findElement(submil);
+			return subm;
+		}
 		
-		static WebElement usrenameText=driver.findElement(usernamel);
-		static WebElement pasdd=driver.findElement(passwordl);
-		static  WebElement submitbtnL=driver.findElement(submitl);
-		//static  WebElement practce=driver.findElement(practl);
-		//static  WebElement testE=driver.findElement(testExecutionL);
+		public static WebElement usrenameText()
+		{
+			WebElement usert=driver.findElement(usernamel);
+			return usert;
+		}
+		public static WebElement pasdd()
+		{
+			WebElement pasd=driver.findElement(passwordl);
+			return pasd;
+		}
+		public static  WebElement submitbtnL()
+		{
+			WebElement sum=driver.findElement(submitl);
+			return sum;
+		}
+		public static  WebElement practce()
+		{
+			WebElement pra=driver.findElement(practl);
+			return pra;
+		}
+		public static  WebElement testE()
+		{
+			WebElement test=driver.findElement(testExecutionL);
+			return test;
+		}
 		 
 	public static void username() throws InterruptedException
 	{
 		Thread.sleep(2000);
-	username.sendKeys("fjgdfffd");
+	usernameL().sendKeys("fjgdfffd");
 	Thread.sleep(2000);
 	}
 
 	public static void password() throws InterruptedException
 	{
-	password.sendKeys("Password123 ");
+		passwordL().sendKeys("Password123 ");
 	Thread.sleep(2000);
 	}
 	
 	public static void Submitbutton()
 	{
-	submit.click();
+	submitL().click();
 	}
 	//
 	public static void Usernametextbox() throws InterruptedException
 	{	
-	usernam.sendKeys("student");
+	usernamL().sendKeys("student");
 	Thread.sleep(2000);
 	}
 	
 	public static void passwordtextbox() throws InterruptedException
 	{
-	pass.sendKeys("Password");
+	passL().sendKeys("Password");
 	Thread.sleep(2000);
 	}
 	
 	public static void submitbtn()
 	{
-	submit1.click();
+	submit1().click();
 	}
 	
 	public static void enterusernametxtbos() throws InterruptedException
 	{
 	Thread.sleep(2000);
-	usrenameText.sendKeys("student");
+	usrenameText().sendKeys("student");
     Thread.sleep(2000);
 	}
 	public static void enterpasswordetxtbos() throws InterruptedException
 	{
 	
-    pasdd.sendKeys("Password123");
+    pasdd().sendKeys("Password123");
     Thread.sleep(2000);
 	}
    public static void submitBt() throws InterruptedException
    {
-    submitbtnL.click();
+    submitbtnL().click();
     Thread.sleep(2000);
    }
    
-//   public static void clickonpracticeelement() throws InterruptedException
-//   {
-//    practce.click();
-//    
-//    Thread.sleep(2000);
-//   }
-//    public static void clickontestexecution()
-//    {
-//   
-//    testE.click();
-//	
-//    }
+   public static void clickonpracticeelement() throws InterruptedException
+   {
+    practce().click();
+    
+    Thread.sleep(2000);
+   }
+    public static void clickontestexecution()
+    {
+   
+    testE().click();
+	
+    }
     
 	
 

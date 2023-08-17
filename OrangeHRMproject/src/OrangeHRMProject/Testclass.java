@@ -35,8 +35,5 @@ public class Testclass {
 		PIMpage.DriverLicencebox();
 		//Thread.sleep(2000);
 		PIMpage.savebtn();
-		
-		
-	
 	}
 }

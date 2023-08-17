@@ -29,11 +29,11 @@ public class W3school {
 		WebElement logi=driver.findElement(loginL1);
 		logi.click();
 		Thread.sleep(5000);
-//		driver.switchTo().frame("classic-menu");
-//		Thread.sleep(2000);
-//		By profileL=By.xpath("//a[@id='domains-link']");
-//		WebElement profile=driver.findElement(profileL);
-//		profile.click();
+		driver.switchTo().frame("classic-menu");
+		Thread.sleep(2000);
+		By profileL=By.xpath("//a[@id='domains-link']");
+		WebElement profile=driver.findElement(profileL);
+		profile.click();
 		
 		
 		
