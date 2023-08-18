@@ -15,41 +15,65 @@ public class Orderpage  extends BaseClass
 	
 	
 	
-static	WebElement order=driver.findElement(orderl);
-static 	WebElement signin=driver.findElement(signinl);
-static 	WebElement continuee=driver.findElement(continuel);
-static	WebElement clickneedhepl=driver.findElement(clickNeedHelpl);
-static	WebElement clickonotherissue=driver.findElement(clickonotherissuel);
-static	WebElement yours=driver.findElement(yoursL);
+public static	WebElement order()
+{
+	WebElement ordr=driver.findElement(orderl);
+	return ordr;
+}
+public static 	WebElement signin()
+{
+	WebElement sign=driver.findElement(signinl);
+	return sign;
+}
+public static 	WebElement continuee()
+{
+	WebElement conti=driver.findElement(continuel);
+	return conti;
+}
+public static	WebElement clickneedhepl()
+{
+	WebElement clickneed=driver.findElement(clickNeedHelpl);
+	return clickneed;
+}
+public static	WebElement clickonotherissue()
+{
+	WebElement clickissue=driver.findElement(clickonotherissuel);
+	return clickissue;
+}
+public static	WebElement yours()
+{
+	WebElement your=driver.findElement(yoursL);
+	return your;
+}
 	
 	public static void clickorder() throws InterruptedException
 	{
-	order.click();
+	order().click();
 	Thread.sleep(2000);
 	}
 	
 	public static void singintextbox() throws InterruptedException
 	{
-	signin.sendKeys("hfdjghfsdjh@gmail.com");
+	signin().sendKeys("hfdjghfsdjh@gmail.com");
 	Thread.sleep(2000);
 	}
 	public static void continueebt() throws InterruptedException
 	{	
-	continuee.click();
+	continuee().click();
 	Thread.sleep(2000);
 	}
 	public static void clickneedhelpbtn() throws InterruptedException
 	{
-	clickneedhepl.click();
+	clickneedhepl().click();
 	Thread.sleep(2000);
 	}
 	public static void clickontherisseues() throws InterruptedException
 	{
-	clickonotherissue.click();
+	clickonotherissue().click();
 	Thread.sleep(2000);
 	}
 	public static void yourslink()
 	{
-	yours.click();
+	yours().click();
 	}
 }

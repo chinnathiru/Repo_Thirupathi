@@ -9,11 +9,18 @@ public class ProfilePage extends Baseclass
 	
 static By Profilel=By.xpath("//a[text()='Profile']");
 
-static WebElement profile=driver.findElement(Profilel);
-
-public static void clickprofile()
+public static WebElement profile()
 {
-profile.click();
+	
+	WebElement pro=driver.findElement(Profilel);
+	return pro;
+}
+
+public static void clickprofile() throws InterruptedException
+{
+	driver.switchTo().frame("classic-menu");
+	
+     profile().click();
 }	
 	
 	
