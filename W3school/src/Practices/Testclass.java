@@ -8,8 +8,12 @@ public class Testclass {
 		Loginpage.enterusername();
 		Loginpage.entrepassword();
 		Loginpage.clickloginbutton();
-		Loginpage.closeBroswer();
+		Thread.sleep(3000);
+	    ProfilePage.frameL();
 		ProfilePage.clickprofile();
+		Thread.sleep(3000);
+		ProfilePage.nickName();
+		ProfilePage.nicknameText();
 
 	}
 
