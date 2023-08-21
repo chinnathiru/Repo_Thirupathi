@@ -30,6 +30,32 @@ public class Hydtutorials
 		{
 			driver.switchTo().window(ele);
 			System.out.println(driver.getTitle());
+			driver.manage().window().maximize();
+			By firstNamel=By.xpath("//input[@id='firstName']");
+			WebElement firstname=driver.findElement(firstNamel);
+			firstname.sendKeys("nani");
+			Thread.sleep(2000);
+			By lastNamel=By.xpath("//input[@id='lastName']");
+			WebElement lastname=driver.findElement(lastNamel);
+			lastname.sendKeys("chinna");
+			Thread.sleep(2000);
+			By radiobtnl=By.xpath("//input[@id='malerb']");
+			WebElement radiobtn=driver.findElement(radiobtnl);
+			radiobtn.click();
+			Thread.sleep(2000);
+			By checkboxl=By.xpath("//input[@id='malerb']");
+			WebElement checkbox=driver.findElement(checkboxl);
+			checkbox.click();
+			Thread.sleep(2000);
+			By radiobtnL=By.xpath("//input[@id='malerb']");
+			WebElement radiobt=driver.findElement(radiobtnl);
+			radiobt.click();
+			Thread.sleep(2000);
+			
+			By clickhomebtnl=By.xpath("//a[text()='Click here to navigate to the home page']");
+			WebElement clickhomebtn=driver.findElement(clickhomebtnl);
+			clickhomebtn.click();
+			Thread.sleep(2000);
 			driver.close();
 		}
 	}
@@ -38,3 +64,12 @@ public class Hydtutorials
 
 }
 }
+/*
+ * //input[@id='firstName']
+ * //input[@id='lastName']
+ * //input[@id='malerb']
+ * //input[@id='englishchbx']
+ * //button[@id='registerbtn']
+ * //a[text()='Click here to navigate to the home page']
+ 
+*/
