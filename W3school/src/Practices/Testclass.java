@@ -13,7 +13,10 @@ public class Testclass {
 		ProfilePage.clickprofile();
 		Thread.sleep(3000);
 		ProfilePage.nickName();
-		ProfilePage.nicknameText();
+		ProfilePage.nickNametext();
+		Thread.sleep(3000);
+		ProfilePage.frameL1();
+		ProfilePage.w3schl();
 
 	}
 
