@@ -1,9 +1,9 @@
 package pages;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
 
-import SeleniumUtility.Baseclass;
 
 public class dashboard extends Baseclass
 {
