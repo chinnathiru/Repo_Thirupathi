@@ -1,15 +1,17 @@
 package pages;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
 
-import SeleniumUtility.BaseClass;
 
 public class loginpage extends BaseClass
 {	
 static	By username=By.xpath("//input[@name='email']");
 static	By password=By.xpath("//input[@name='current-password']");
 static	By login=By.xpath("//span[text()='Log in']");
+static By ErrorL=By.xpath("//span[text()='Please enter an email']");
+
 //webelements	
 public static WebElement usernamel()
 {
@@ -26,17 +28,26 @@ public static WebElement loginl()
 	WebElement log=driver.findElement(login);
 	return log;
 }
+public static WebElement errormsg()
+{
+	 WebElement err=driver.findElement(ErrorL);
+	 return err;
+}
 
 //actions
-public static void enterusername() throws InterruptedException
+public static void enterusername(String username) throws InterruptedException 
 {
-	usernamel().sendKeys("gopu.thirupathi143@gmail.com");
+	usernamel().clear();
+	Thread.sleep(3000);
+	usernamel().sendKeys(username);
 	
 	
 }
-public static void entrepassword() throws InterruptedException
+public static void entrepassword(String password) throws InterruptedException
 {
-	passwordl().sendKeys("Thiruramya@143");
+	passwordl().clear();
+	Thread.sleep(3000);
+	passwordl().sendKeys(password);
 	
 }
 public static void clickloginbutton() throws InterruptedException
